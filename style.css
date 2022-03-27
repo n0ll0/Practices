@@ -1,0 +1,86 @@
+body {
+    background-color: #191927;
+    color: var(--primary-color);
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+textarea {
+    height: 1.2rem;
+}
+
+.flex-colnowr {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+a, h1, h2, h3, h4 {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+p {
+    color: var(--gray-secondary-color);
+}
+
+/* variables */
+
+:root {
+    --primary-color: #fff;
+    --gray-secondary-color: #aaa;
+}
+
+
+/* left navigation */
+
+header {
+    width: clamp(15%, 16%, 20%);
+    height: 100%;
+}
+nav {
+    width: 100%;
+    align-items: center;
+}
+.navLinks {
+    padding: 0.5rem;
+    position: relative;
+    font-size: 20;
+}
+
+/* nav images */
+.logo {
+    margin: 10px 20px;
+    width: clamp(80px, 20%, 90px);
+}
+.logo img {
+    width: 100%;
+}
+.navLinks::before {
+    content: '';
+    position: absolute;
+    right: 100%;
+    top: 0.1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: contain;
+}
+
+.navLinks:nth-child(1)::before {
+    background-image: url(/DefaultImages/Home.png);
+}
+.navLinks:nth-child(2)::before {
+    background-image: url(/DefaultImages/Folder.png);
+}
+.navLinks:nth-child(3)::before {
+    background-image: url(/DefaultImages/Recent.png);
+}
+.navLinks:nth-child(4)::before {
+    background-image: url(/DefaultImages/Images.png);
+}
+.navLinks:nth-child(5)::before {
+    background-image: url(/DefaultImages/Bin.png);
+}
+.navLinks:nth-child(6)::before {
+    background-image: url(/DefaultImages/Shared.png);
+}
