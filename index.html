@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <header class="flex-colnowr" id="header">
+        <a href="#" class="logo"><img src="DefaultImages\Logo.svg" alt="Logo"></a>
+        <button class="close" onclick="headerCloseMobile()">X</button>
+        <nav class="flex-colnowr">
+            <button id="Home" onclick="addSelection('Home')" class="navLinks selected">Home</button>
+            <button id="Files" onclick="addSelection('Files')" class="navLinks">Files</button>
+            <button id="Recent" onclick="addSelection('Recent')" class="navLinks">Recent</button>
+            <button id="Photos" onclick="addSelection('Photos')" class="navLinks">Photos</button>
+            <button id="Bin" onclick="addSelection('Bin')" class="navLinks">Bin</button>
+            <button id="Shared" onclick="addSelection('Shared')" class="navLinks">Shared</button>
+        </nav>
+    </header>
+    <main class="flex-colnowr">
+        <div class="searchBar">
+            <textarea name="Search" placeholder="Search files" id="SearchFiles"></textarea>
+            <a href="" class="upload blueButton">Upload</a>
+        </div>
+        <div class="categories">
+            <div class="categoryItem flex-colnowr">
+                <img src="./DefaultImages/Documenttxt.svg" alt="Category " id="categoryImage1">
+                <h2>Documents</h2>
+                <p>10GB</p>
+            </div>
+            <div class="categoryItem flex-colnowr">
+                <img src="./DefaultImages/Vault.svg" alt="Category " id="categoryImage2">
+                <h2>Vault</h2>
+                <p>10GB</p>
+            </div>
+            <div class="categoryItem flex-colnowr">
+                <img src="./DefaultImages/Photos.svg" alt="Category " id="categoryImage3">
+                <h2>Photos</h2>
+                <p>10GB</p>
+            </div>
+            <div class="categoryItem flex-colnowr">
+                <img src="https://images.all-free-download.com/images/graphicwebp/exe_file_37115.webp" alt="Category " id="categoryImage4">
+                <h2>Executables</h2>
+                <p>10GB</p>
+            </div>
+        </div>
+        <div class="syncing">
+            <p class="lastSynced">Your drive was last synced on _, _</p>
+            <button class="syncNow blueButton">Sync now</button>
+        </div>
+    <div class="recentFiles">
+        <div class="recentTop fileParent">
+            <p class="fileName">File name</p>
+            <p class="fileDescription">file description</p>
+            <p class="fileType">type</p>
+            <p class="fileSize">Size</p>
+        </div>
+        <a href="" class="fileParent">
+            <p class="fileName">Document.txt</p>
+            <p class="fileDescription">Document</p>
+            <p class="fileType">txt</p>
+            <p class="fileSize">1kb</p>
+        </a>
+        <a href="" class="fileParent">
+            <p class="fileName">Document.txt</p>
+            <p class="fileDescription">Document</p>
+            <p class="fileType">txt</p>
+            <p class="fileSize">1kb</p>
+        </a>
+        <a href="" class="fileParent">
+            <p class="fileName">Document.txt</p>
+            <p class="fileDescription">Document</p>
+            <p class="fileType">txt</p>
+            <p class="fileSize">1kb</p>
+        </a>
+        <a href="" class="fileParent">
+            <p class="fileName">Document.txt</p>
+            <p class="fileDescription">Document</p>
+            <p class="fileType">txt</p>
+            <p class="fileSize">1kb</p>
+        </a>
+        <a href="" class="fileParent">
+            <p class="fileName">Document.txt</p>
+            <p class="fileDescription">Document</p>
+            <p class="fileType">txt</p>
+            <p class="fileSize">1kb</p>
+        </a>
+        <a href="" class="fileParent">
+            <p class="fileName">Document.txt</p>
+            <p class="fileDescription">Document</p>
+            <p class="fileType">txt</p>
+            <p class="fileSize">1kb</p>
+        </a>
+        <a href="" class="fileParent">
+            <p class="fileName">Document.txt</p>
+            <p class="fileDescription">Document</p>
+            <p class="fileType">txt</p>
+            <p class="fileSize">1kb</p>
+        </a>
+    </div>
+    </main>
+    <footer class="flex-colnowr">
+        <div class="account">
+            <div class="accountUser">
+                <img src="" alt="" class="accountImage">
+                <p class="accountName"></p>
+            </div>
+            <a href="" class="settings"><img src="" alt=""></a>
+        </div>
+        <div class="storage">
+            <div id="storageImg"><img src="" alt="Used storage img"><h1>Storage used</h1></div>
+            <ul class="storageList">
+                <div class="storageItem"></div>
+                <div class="storageItem"></div>
+                <div class="storageItem"></div>
+            </ul>
+        </div>
+        <div class="currentPlan">
+            <h3>Current plan</h3>
+            <h2>1TB Storage</h2>
+            <img src="" alt="Progress" class="currentPlanImage">
+            <p class="usedCurrentPlan">780.16 gb of 1TB used</p>
+        </div>
+        <div class="premium">
+            <img src="" alt="">
+            <h2>Advanced security, Exclusive features</h2><a href="" class="premiumButton blueButton">Go premium</a>
+        </div>
+    </footer>
+</body>
+</html>
