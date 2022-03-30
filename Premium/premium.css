@@ -28,7 +28,10 @@ main {
 img {
     float: right;
 }
-
+section {
+    scale: 0;
+    transition: all 1000ms ease-in-out;
+}
 section {
     width: 90ch;
     background-color: var(--card-BG-color);
@@ -36,6 +39,7 @@ section {
     padding: 3rem;
     border-radius: var(--round) calc(var(--round) + 10vw);
     box-shadow: var(--box-shadow);
+    scale: 1;
 }
 section:nth-child(even) {
     align-self: flex-end;

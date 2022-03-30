@@ -66,7 +66,7 @@ nav {
 .navLinks {
     padding: calc(0.5rem + 0.1vw);
     position: relative;
-    font-size: 1rem;
+    font-size: calc(1rem + 0.5vw);
     width: 100%;
     background-color: transparent;
     border: none;
@@ -84,9 +84,9 @@ nav {
     content: '';
     position: absolute;
     float: left;
-	left: 15%;
+	left: calc(10% + 0.05vw);
     top: 10%;
-    width: 1.5rem;
+    width: calc(1.5rem + 0.5vw);
     aspect-ratio: 1;
     background-size: contain;
 }
@@ -269,6 +269,56 @@ footer {
 #storageImg img {
     width: 70%;
     aspect-ratio: 1;
+}
+
+/* Storage used list */
+
+.storageList {
+    list-style: none;
+    text-align: center;
+    padding: 0 3rem;
+}
+.storageItem::before {
+    content: "\2022";
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -2em;
+}
+.storageItem:nth-child(1)::before {
+    color: #7B61FF;
+}
+.storageItem:nth-child(2)::before {
+    color: #61B3FF;
+}
+.storageItem:nth-child(3)::before {
+    color: #FF6190;
+}
+.storageItem:nth-child(4)::before {
+    color: #FFDC61;
+}
+
+/* current plan card  */
+.currentPlan {
+    width: 310px;
+}
+.currentPlan h3 {
+    float: left;
+    font-size: 90%;
+}
+.currentPlan h2 {
+    float: right;
+    font-size: 90%;
+    margin-top: 20px;
+}
+
+/* premium */
+.premium {
+    width: 100%;
+}
+.premium img {
+    width: 99%;
+    margin: auto;
 }
 
 /* Media queries */
