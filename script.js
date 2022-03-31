@@ -9,3 +9,6 @@ const addSelection = (link) => {
 function headerCloseMobile() {
     document.getElementById('header').classList.add('closed');
 }
+function headerOpenMobile() {
+    document.getElementById('header').classList.remove('closed');
+}

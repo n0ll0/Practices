@@ -14,6 +14,31 @@ body {
     color: var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin: 2rem auto;
+}
+
+header {
+    text-align: right;
+}
+
+a {
+
+    text-decoration: none;
+    color: var(--gray-secondary-color);
+    background-color: var(--background-color);
+    padding: var(--round);
+    border-radius: var(--round);
+    margin: calc(var(--round) + 0.1vw);
+}
+
+a.linkWithIcon::before {
+    content: "00";
+    color: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    background-color: #FF0;
+    opacity: 100%;
+    left: -1.5rem;
+
 }
 
 main {
@@ -23,6 +48,7 @@ main {
     gap: 3rem;
     align-items: flex-start;
     padding: 1rem;
+    text-align: left;
 }
 
 img {
@@ -48,4 +74,10 @@ section:nth-child(even) {
 }
 section:nth-child(even) img {
     float: left;
+}
+section:nth-child(even) p {
+    text-align: left;
+}
+section:nth-child(odd) p {
+    text-align: right;
 }

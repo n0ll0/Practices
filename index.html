@@ -12,7 +12,7 @@
 
 <body>
     <header class="flex-colnowr" id="header">
-        <a href="#" class="logo"><img src="DefaultImages\Logo.svg" alt="Logo"></a>
+        <a href="" class="logo"><img src="DefaultImages\Logo.svg" alt="Logo"></a>
         <button class="close" onclick="headerCloseMobile()">X</button>
         <nav class="flex-colnowr">
             <button id="Home" onclick="addSelection('Home')" class="navLinks selected">Home</button>
@@ -25,6 +25,7 @@
     </header>
     <main class="flex-colnowr">
         <div class="searchBar">
+            
             <textarea name="Search" placeholder="Search files" id="SearchFiles"></textarea>
             <a href="" class="upload blueButton">Upload</a>
         </div>
@@ -137,6 +138,7 @@
             <a href="Premium/premium.html" class="blueButton">Go premium</a>
         </div>
     </footer>
+    <button class="Mobile blueButton" onclick="headerOpenMobile()"><img src="DefaultImages/Home.png" alt="Navigation"></button>
 </body>
 
 </html>
