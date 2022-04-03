@@ -62,13 +62,14 @@ nav {
     align-items: center;
 }
 .navLinks {
-    padding: calc(0.5rem + 0.1vw);
+    padding: calc(0.5rem + 0.2vw);
     position: relative;
     font-size: calc(1rem + 0.5vw);
     width: 100%;
     background-color: transparent;
     border: none;
     color: var(--primary-color);
+    margin: 0;
 }
 .navLinks.selected {
     background-color: var(--hover-color);
@@ -83,7 +84,7 @@ nav {
     position: absolute;
     float: left;
 	left: calc(10% + 0.05vw);
-    top: 10%;
+    top: 20%;
     width: calc(1.5rem + 0.3vw);
     aspect-ratio: 1;
     background-size: contain;
@@ -361,8 +362,7 @@ footer {
         width: 100%;
         transform: scale(1.5);
         top: 25vh;
-        left: 25vw;
-        padding: 10vw;
+        padding: 0;
         z-index: 1;
         
     }
