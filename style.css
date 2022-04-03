@@ -15,8 +15,8 @@ body {
     background-color: #191927;
     color: var(--primary-color);
     margin: 0;
-    display: flex;
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
     width: 100%;
     font-size: 20px;
     gap: 1vw;
@@ -38,7 +38,7 @@ p {
 
 
 
-/* header, left navigation */
+/* header, left navigation ---------------------------------------------------------------- */
 
 .logo {
     margin: 5px auto;
@@ -48,8 +48,6 @@ p {
     width: 100%;
 }
 header {
-    /* width: clamp(15%, 16%, 20%); */
-	flex-basis: 15%;
     height: 100%;
 }
 .close {
@@ -78,7 +76,7 @@ nav {
 }
 
 
-/* nav images */
+/* nav images ---------------------------------------------------------------- */
 
 .navLinks::before {
     content: '';
@@ -86,7 +84,7 @@ nav {
     float: left;
 	left: calc(10% + 0.05vw);
     top: 10%;
-    width: calc(1.5rem + 0.5vw);
+    width: calc(1.5rem + 0.3vw);
     aspect-ratio: 1;
     background-size: contain;
 }
@@ -111,15 +109,14 @@ nav {
 }
 
 
-/* Main */
+/* Main ---------------------------------------------------------------- */
 
 main {
-	flex-basis: 65%;
     margin-top: 1vw;
     gap: 10px;
 }
 
-/* top searchbar */
+/* top searchbar ---------------------------------------------------------------- */
 .searchBar {
     display: flex;
     flex-flow: row nowrap;
@@ -149,7 +146,7 @@ textarea::before {
     background-image: url(/DefaultImages/Search.svg);
 }
 
-/* Categories */
+/* Categories --------------------------------------------------------------------- */
 
 .categories {
 	display: flex;
@@ -180,7 +177,7 @@ textarea::before {
     font-size: calc(0.95rem - 8%);
 }
 
-/* Syncing */
+/* Syncing -------------------------------------------------------------------- */
 
 .syncing {
     width: 100%;
@@ -211,7 +208,7 @@ textarea::before {
     font-size: calc(1.2rem + 1px);
 }
 
-/* recent files */
+/* recent files --------------------------------------------------------------------- */
 
 .recentFiles {
     display: flex;
@@ -262,23 +259,25 @@ textarea::before {
 .fileParent:nth-child(1) .fileName::before {
     content: none;
 }
-/* footer */
+/* footer ---------------------------------------------------------------- */
 
 footer {
-	flex-basis: 20%;
     text-align: center;
+    font-size: 1vw;
 }
+
+/* Storage used list --------------------------------------------------------- */
+
+
 #storageImg img {
     width: 70%;
     aspect-ratio: 1;
 }
-
-/* Storage used list */
-
 .storageList {
     list-style: none;
     text-align: center;
     padding: 0 3rem;
+    font-size: 1.4em;
 }
 .storageItem::before {
     content: "\2022";
@@ -300,21 +299,25 @@ footer {
     color: #FFDC61;
 }
 
-/* current plan card  */
+/* current plan card ----------------------------------------------------------------  */
 .currentPlan {
     width: 310px;
+    font-size: 1em;
 }
 .currentPlan h3 {
     float: left;
-    font-size: 90%;
+    font-size: 2em;
 }
 .currentPlan h2 {
     float: right;
-    font-size: 90%;
+    font-size: 2em;
     margin-top: 20px;
 }
+.currentPlan p {
+    font-size: 1.5em;
+}
 
-/* premium */
+/* premium ---------------------------------------------------------------- */
 .premium {
     width: 100%;
 }
@@ -323,14 +326,14 @@ footer {
     margin: auto;
 }
 
-/* Media queries */
+/* Media queries ---------------------------------------------------------------- */
 
 .Mobile {
     display: none;
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .navLinks {
         font-size: calc(1rem - 10%);
     }
@@ -339,6 +342,8 @@ footer {
     }
     
 }
+
+
 @media (max-width: 700px) {
     body {
         flex-flow: row wrap-reverse;
@@ -376,6 +381,8 @@ footer {
         width: 30px;
     }
 }
+
+
 @media (max-width: 500px) {
     .categories {
         display: none;
