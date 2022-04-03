@@ -171,10 +171,10 @@ textarea::before {
     width: 60%;
 }
 .categoryItem h2 {
-    font-size: calc(1.2rem - 8%);
+    font-size: 1rem;
 }
 .categoryItem p {
-    font-size: calc(0.95rem - 8%);
+    font-size: 0.9rem;
 }
 
 /* Syncing -------------------------------------------------------------------- */
@@ -302,7 +302,7 @@ footer {
 /* current plan card ----------------------------------------------------------------  */
 .currentPlan {
     width: 310px;
-    font-size: 1em;
+    font-size: 10px;
 }
 .currentPlan h3 {
     float: left;
@@ -311,7 +311,6 @@ footer {
 .currentPlan h2 {
     float: right;
     font-size: 2em;
-    margin-top: 20px;
 }
 .currentPlan p {
     font-size: 1.5em;
@@ -346,10 +345,11 @@ footer {
 
 @media (max-width: 700px) {
     body {
-        flex-flow: row wrap-reverse;
+        grid-template-columns: 0.89fr;
+        grid-template-rows: 1 1;
         padding: 1rem auto;
         gap: 3rem;
-        margin: 0 2rem;
+        margin: 0 1rem;
     }
     main, section, footer {
         width: 100%;
@@ -357,11 +357,14 @@ footer {
     header {
         position: absolute;
         background: radial-gradient(circle, rgba(2,0,36,1) 50%, rgba(0,102,205,1) 75%, rgba(9,9,121,1) 90%);
-        height: max-content;
-        transform: scale(1.8);
-        top: 80px; left: 3rem;
+        height: 100%;
+        width: 100%;
+        transform: scale(1.5);
+        top: 25vh;
+        left: 25vw;
         padding: 10vw;
         z-index: 1;
+        
     }
     .close {
         display: block;
@@ -372,22 +375,34 @@ footer {
     .Mobile {
         display: block;
         position: absolute;
-        top: 1rem;
-        left: 1.2rem;
+        top: 0.51rem;
+        left: 0.51rem;
         font-size: 0.1rem !important;
         padding: 0.9rem;
     }
     .Mobile img {
-        width: 30px;
+        width: 2rem;
+    }
+    .storage {
+        font-size: 1rem;
     }
 }
 
 
 @media (max-width: 500px) {
-    .categories {
-        display: none;
+    .categoryItem {
+        height: 100%;
+        width: auto;
+        font-size: 10px;
     }
+    .categories {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    /*
     .premium img {
         display: none;
-    }
+    } */
+
 }
