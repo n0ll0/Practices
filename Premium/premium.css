@@ -18,27 +18,32 @@ body {
 }
 
 header {
-    text-align: right;
+    text-align: left;
+    z-index: 2;
+    margin: var(--round) 0;
 }
 
 a {
-
     text-decoration: none;
     color: var(--gray-secondary-color);
     background-color: var(--background-color);
-    padding: var(--round);
     border-radius: var(--round);
     margin: calc(var(--round) + 0.1vw);
 }
-
+.linkWithIcon {
+    position: relative;
+    padding: 1.5rem 1rem 1.5rem 5em;
+}
 a.linkWithIcon::before {
-    content: "00";
+    position: absolute;
+    content: "";
     color: rgba(255, 255, 255, 0);
-    border-radius: 100%;
-    background-color: #FF0;
+    background-image: url(../Defaultimages/Home.png);
+    width: 57px;
+    aspect-ratio: 1;
     opacity: 100%;
-    left: -1.5rem;
-
+    right: 50%;
+    top: 10%;
 }
 
 main {
